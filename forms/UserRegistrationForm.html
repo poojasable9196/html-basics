@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>User Registration Form</title>
+	<style>
+		body {
+			background-color:#e1e8e3;
+			margin: 0;
+			font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+		}
+		header {
+			background-color: black;
+			padding: 20px;
+			font-weight: bold;
+			text-align: center;
+			color: white;
+			font-size: 3em;
+		}
+		footer {
+			background-color: black;
+			padding: 10px;
+			font-weight: normal;
+			text-align: center;
+			color: white;
+			font-size: 1em;
+		}
+		form {
+			padding: 20px;
+		}
+		.field {
+			width: 100%;
+			clear: both;
+		}
+		.field-label {
+			width: 50%;
+			float: left;
+			text-align:right;
+			padding: 5px;
+			margin-right: 10px;
+			font-weight: bold;
+		}
+		.field-value {
+			float: left;
+			text-align:left;
+			padding: 5px;
+			margin-left: 10px;
+		}
+		
+		input[type="text"] {
+			padding: 4px;
+			width: 300px;
+		}
+		
+		input[type="radio"],input[type="checkbox"]  {
+			transform: scale(1.5);
+		}
+		
+		select {
+			padding: 4px;
+		}
+		
+		.button {
+		  background-color: #4CAF50; /* Green */
+		  border: none;
+		  color: white;
+		  padding: 15px 32px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  cursor: pointer;
+		}
+		
+		.cancel {
+			background-color: #555555;
+		}
+	</style>
+</head>
+<body>
+	<header>Registration</header>
+	
+	<form method="POST">
+		<div class="field">
+			<div class="field-label">
+				<label for="firstName">First Name</label>
+			</div>
+			<div class="field-value">
+				<input type="text" id="firstName" name="firstName"/>
+			</div>
+		</div>
+		
+		<div class="field">
+			<div class="field-label">
+				<label for="lastName">Last Name</label>
+			</div>
+			<div class="field-value">
+				<input type="text" id="lastName" name="lastName"/>
+			</div>
+		</div>
+		
+		<div class="field">
+			<div class="field-label">
+				<label>DOB<label>
+			</div>
+			<div class="field-value">
+				<select id="day" name="day" >
+					<option>01</option>
+					<option>02</option>
+					<option>03</option>
+					<option>04</option>
+					<option>05</option>
+					<option>06</option>
+					<option>07</option>
+					<option>08</option>
+					<option>09</option>
+					<option>10</option>
+				</select>
+				
+				<select id="month" name="month">
+					<option>January</option>
+					<option>February</option>	
+					<option>March</option>		
+					<option>April</option>		
+					<option>May</option>			
+					<option>June</option>		
+					<option>July</option>		
+					<option>August</option>		
+					<option>September</option>	
+					<option>October</option>		
+					<option>November</option>	
+					<option>December</option>
+				</select>
+				
+				<select id="year" name="year">
+					<option>2019</option>
+					<option>2020</option>
+					<option>2030</option>
+					<option>2014</option>
+				</select>
+			</div>
+		</div>
+		
+		<div class="field">
+			<div class="field-label">
+				<label>Gender</label>
+			</div>
+			<div class="field-value">
+				<input type="radio" id="male" name="gender"/>
+				<label for="male">Male</label>
+				<input type="radio" id="female" name="gender"/>
+				<label for="female">Female</label>
+				<input type="radio" id="other" name="gender"/>
+				<label for="other">Other</label>
+			</div>
+		</div>
+		
+		<div class="field">
+			<div class="field-label">
+			
+			</div>
+			<div class="field-value">
+				
+			</div>
+		</div>
+		
+		<div class="field">
+			<div class="field-label">
+				<label for="states"/>States<label>
+			</div>
+			<div class="field-value">
+				<select id="states" name="states">
+					<option>Maharashtra</option>
+					<option>Hydrabad</option>
+					<option>Kerala</option>
+					<option>Tamil Nadu</option>
+				</select>
+			</div>
+		</div>
+		
+		<div class="field">
+			<div class="field-label">
+				<label for="country"/>Country<label>
+			</div>
+			<div class="field-value">
+				<select id="country" name="country">
+					<option>India</option>
+					<option>UAE</option>
+					<option>Japan</option>
+					<option>America</option>
+				</select>
+			</div>
+		</div>
+		
+		<div class="field">
+			<div class="field-label">
+				<label for="email">Email</label>
+			</div>
+			<div class="field-value">
+				<input type="text" id="email" name="email"/>
+			</div>
+		</div>
+		
+		<div class="field">
+			<div class="field-label">
+				<label for="phone">Phone</label>
+			</div>
+			<div class="field-value">
+				<input type="text" id="phone" name="phone"/>
+			</div>
+		</div>
+		
+		<div class="field">
+			<div class="field-label">
+				<label for="password">Password</label>
+			</div>
+			<div class="field-value">
+				<input type="text" id="password" name="password"/>
+			</div>
+		</div>
+		
+		<div class="field">
+			<div class="field-label">
+				<label>Hobbies</label>
+			</div>
+			<div class="field-value">
+				<input type="checkbox" id="cricket" name="cricket" value="cricket"/>
+				<label for="cricket">Cricket</label>
+				
+				<input type="checkbox" id="dance" name="dance" value="dance"/>
+				<label for="dance">Dance</label>
+				
+				<input type="checkbox" id="singing" name="singing" value="singing"/>
+				<label for="singing">Singing</label>
+			</div>
+		</div>
+		
+		<div class="field">
+			<div style="text-align:center; padding: 20px;">
+				<input class="button" type="submit" id="register" name="register" value="Register">
+				<input class="button cancel" type="button" id="cancle" name="cancle" value="Cancle">
+			</div>
+		</div>
+	</form>
+	
+	<footer>Pooja.sable@gmail.com</footer>
+</body>
+</html>
